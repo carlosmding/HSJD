@@ -28,24 +28,39 @@ import java.time.LocalDateTime;
 
 public class User implements Serializable {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @NotNull
+    @NotBlank
+    @Size(min = 6, max = 20)
+    private String numeroDeDocumento;
 
     @NotNull
     @NotBlank
-    @Size(min = 3, max = 45)
-    private String name;
-
-    @NotNull
-    @NotBlank
-    @Size(min = 8, max = 45)
-    private String password;
+    @Size(min = 2, max = 4)
+    private String tipoDeDocumento;
 
     @NotNull
     @NotBlank
     @Size(min = 3, max = 100)
-    private String email;
+    private String nombres;
+
+    @NotNull
+    @NotBlank
+    private Boolean estado;
+
+    @NotNull
+    @NotBlank
+    @Size(min = 8, max = 45)
+    private String cargo;
+
+    @NotNull
+    @NotBlank
+    @Size(min = 8, max = 45)
+    private String palabraClave;
+
+    @NotNull
+    @NotBlank
+    @Size(min = 4, max = 20)
+    private String clave;
 
     private LocalDateTime createDate;
 
