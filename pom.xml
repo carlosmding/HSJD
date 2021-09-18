@@ -13,6 +13,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>HSJD</name>
 	<description>Agendamiento HSJD</description>
+
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
@@ -42,6 +43,15 @@
 			<artifactId>jakarta.validation-api</artifactId>
 			<version>2.0.2</version>
 		</dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.2.16.RELEASE</version>
+        </dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -52,5 +62,6 @@
 			</plugin>
 		</plugins>
 	</build>
+
 
 </project>
